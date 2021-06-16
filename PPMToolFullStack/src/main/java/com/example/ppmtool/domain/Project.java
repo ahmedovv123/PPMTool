@@ -22,7 +22,7 @@ public class Project {
     @Column(updatable = false, unique = true)
     private String projectIdentifier;
 
-    @NotBlank(message = "Project message is required")
+    @NotBlank(message = "Project description is required")
     private String description;
 
     @JsonFormat(pattern = "yyyy-mm-dd")
